@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Info</title>
+</head>
+<body>
+    <h1>Your IP Address: {{ ip }}</h1>
+    <h2>Country: {{ country }}</h2>
+    {% if is_saved %}
+    <button type="button" disabled>Save IP Address</button>
+    {% else %}
+    <a href="/save"><button type="button">Save IP Address</button></a>
+    {% endif %}
+</body>
+</html>
